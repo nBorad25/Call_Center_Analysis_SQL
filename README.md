@@ -2,7 +2,7 @@
 
 **Overview**
 
-This project analyzes a call center dataset using SQL to uncover insights into customer interactions, operational efficiency, and service quality. The dataset, sourced from 'Real World Fake Data' (https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Call+Center.csv), contains over 32,900 records of customer calls, including details like customer ID, name, sentiment, CSAT score, call timestamp, reason, location, channel, response time, call duration, and call center location. The SQL script (call_center_analysis.sql) performs data cleaning, exploratory data analysis (EDA), and aggregations to answer key business questions.
+This project analyzes a call center dataset using SQL to uncover insights into customer interactions, operational efficiency, and service quality. The dataset contains over 32,900 records of customer calls, including details like customer ID, name, sentiment, CSAT score, call timestamp, reason, location, channel, response time, call duration, and call center location. The SQL script (call_center_analysis.sql) performs data cleaning, exploratory data analysis (EDA), and aggregations to answer key business questions.
 
 **Objectives**
 
