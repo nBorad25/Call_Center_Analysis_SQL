@@ -1,10 +1,10 @@
-Call Center Analysis SQL Project
+**Call Center Analysis SQL Project**
 
-Overview
+**Overview**
 
 This project analyzes a call center dataset using SQL to uncover insights into customer interactions, operational efficiency, and service quality. The dataset, sourced from 'Real World Fake Data' (https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Call+Center.csv), contains over 32,900 records of customer calls, including details like customer ID, name, sentiment, CSAT score, call timestamp, reason, location, channel, response time, call duration, and call center location. The SQL script (call_center_analysis.sql) performs data cleaning, exploratory data analysis (EDA), and aggregations to answer key business questions.
 
-Objectives
+**Objectives**
 
 
 
@@ -20,7 +20,7 @@ Exploratory Data Analysis: Examine distributions of sentiments, call reasons, ch
 
 Aggregations: Compute metrics like minimum, maximum, and average CSAT scores, call durations, and call counts by state, reason, and sentiment to identify trends and operational insights.
 
-Dataset Description
+**Dataset Description**
 
 The dataset includes the following columns:
 
@@ -74,13 +74,13 @@ call_duration_minutes: Call duration in minutes (INT).
 
 call_center: Call center location (e.g., Los Angeles/CA, Chicago/IL) (CHAR(50)).
 
-Prerequisites
+**Prerequisites**
 
 
 
 
 
-Database: MySQL (used in the script; adaptable to PostgreSQL or SQL Server).
+Database: MySQL
 
 
 
@@ -90,7 +90,7 @@ Tools: MySQL Workbench or any SQL client.
 
 Dataset: Download the Call Center CSV from the provided link and import it into the database.
 
-Setup Instructions
+**Setup Instructions**
 
 
 
@@ -130,7 +130,7 @@ IGNORE 1 ROWS;
 
 Run the Analysis: Execute the provided SQL script (call_center_analysis.sql) to clean the data and perform the analysis.
 
-Data Cleaning
+**Data Cleaning**
 
 The script includes the following cleaning steps:
 
@@ -148,7 +148,7 @@ CSAT Score Handling: Sets csat_score values of 0 to NULL:
 
 UPDATE calls SET csat_score = NULL WHERE csat_score = 0;
 
-Analysis Overview
+**Analysis Overview**
 
 The script performs the following analyses:
 
@@ -228,7 +228,7 @@ State Analysis: Counts calls by state, reasons, and sentiments; calculates avera
 
 Sentiment Analysis: Computes average call durations by sentiment.
 
-Key Insights
+**Key Insights**
 
 
 
@@ -252,13 +252,13 @@ Regional Trends: States like Texas and California have high call volumes, with v
 
 Sentiment Impact: Negative sentiment calls tend to have longer durations, indicating complex issues.
 
-How to Run
+**How to Run**
 
 
 
 
 
-Clone the repository (if hosted on GitHub).
+Clone the repository.
 
 
 
@@ -276,31 +276,9 @@ Execute the SQL script (call_center_analysis.sql) in your SQL client.
 
 Review query results to derive insights or modify queries for additional analysis.
 
-Future Improvements
 
 
-
-
-
-Convert csat_score to INT for numerical computations.
-
-
-
-Add indexes on frequently queried columns (e.g., state, reason) for performance.
-
-
-
-Create views for commonly used aggregations.
-
-
-
-Integrate with visualization tools (e.g., Tableau) for graphical insights.
-
-
-
-Expand analysis to include agent performance or time-based trends (e.g., calls by hour).
-
-Source
+**Source**
 
 
 
